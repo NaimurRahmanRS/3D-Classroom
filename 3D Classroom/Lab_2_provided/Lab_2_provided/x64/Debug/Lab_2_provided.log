@@ -1,0 +1,14 @@
+﻿  main.cpp
+C:\Users\never\source\repos\Lab_2_provided\basic_camera.h(92,9): warning C4068: unknown pragma 'oncea'
+  (compiling source file 'main.cpp')
+  
+C:\Users\never\source\repos\Lab_2_provided\main.cpp(234,124): warning C4101: 'InvRotateTranslateMatrix': unreferenced local variable
+C:\Users\never\source\repos\Lab_2_provided\main.cpp(234,101): warning C4101: 'RotateTranslateMatrix': unreferenced local variable
+C:\Users\never\source\repos\Lab_2_provided\main.cpp(234,36): warning C4101: 'rotateXMatrix': unreferenced local variable
+C:\Users\never\source\repos\Lab_2_provided\main.cpp(234,66): warning C4101: 'rotateZMatrix': unreferenced local variable
+C:\Users\never\source\repos\Lab_2_provided\main.cpp(552,32): warning C4101: 'rotateXMatrix': unreferenced local variable
+C:\Users\never\source\repos\Lab_2_provided\main.cpp(552,62): warning C4101: 'rotateZMatrix': unreferenced local variable
+C:\Users\never\source\repos\Lab_2_provided\main.cpp(687,32): warning C4101: 'rotateXMatrix': unreferenced local variable
+C:\Users\never\source\repos\Lab_2_provided\main.cpp(687,62): warning C4101: 'rotateZMatrix': unreferenced local variable
+C:\Users\never\source\repos\Lab_2_provided\main.cpp(687,47): warning C4101: 'rotateYMatrix': unreferenced local variable
+  Lab_2_provided.vcxproj -> C:\Users\never\source\repos\Lab_2_provided\x64\Debug\Lab_2_provided.exe
