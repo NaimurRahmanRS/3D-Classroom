@@ -51,7 +51,7 @@ float aspectRatio = 4.0f / 3.0f;
 
 bool birdEyeView = false;
 glm::vec3 birdEyePosition(2.0f, 3.5f, 13.5f); // Initial position (10 units above)
-glm::vec3 birdEyeTarget(2.0f, 0.0f, 4.75f);   // Focus point
+glm::vec3 birdEyeTarget(2.0f, 0.0f, 7.5f);   // Focus point
 float birdEyeSpeed = 1.0f;                   // Speed of movement
 
 float theta = 0.0f; // Angle around the Y-axis
@@ -941,14 +941,22 @@ void processInput(GLFWwindow* window)
     if (birdEyeView) {
         if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
             birdEyePosition.z -= birdEyeSpeed * deltaTime; // Move forward along Z
-            if (birdEyePosition.z <= -4.0) {
-                birdEyePosition.z = -4.0;
+            birdEyeTarget.z -= birdEyeSpeed * deltaTime;
+            if (birdEyePosition.z <= 2.0) {
+                birdEyePosition.z = 2.0;
+            }
+            if (birdEyeTarget.z <= -4.0) {
+                birdEyeTarget.z = -4.0;
             }
         }
         if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
             birdEyePosition.z += birdEyeSpeed * deltaTime; // Move backward along Z
+            birdEyeTarget.z += birdEyeSpeed * deltaTime;
             if (birdEyePosition.z >= 13.5) {
                 birdEyePosition.z = 13.5;
+            }
+            if (birdEyeTarget.z >= 7.5) {
+                birdEyeTarget.z = 7.5;
             }
         }
     }
